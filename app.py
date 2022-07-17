@@ -23,8 +23,8 @@ right.info('MISIÓN 1: ' + r'$x = \frac{p + g}{2}$')
 right.write(r'$p = $Total de xente no crebacabezas')
 right.write(r'$w = $Total de mulleres no crebacabezas')
 right.write(r'$m = $Total homes no crebacabezas')
-right.write(r'$b = $total de nenos no crebacabezas')
-right.write(r'$g = $total de nenas no crebacabezas')
+right.write(r'$b = $Total de nenos no crebacabezas')
+right.write(r'$g = $Total de nenas no crebacabezas')
 
 form = left.form('template_form')
 
