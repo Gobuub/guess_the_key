@@ -28,8 +28,8 @@ right.write(r'$g = $total de nenas en quebracabezas')
 
 form = left.form('template_form')
 
-q1 = form.text_input("Quest 1")
-q2 = form.text_input("Cantos símbolos de planeswalkers hai no queebacabezas")
+q1 = form.text_input("Misión 1")
+q2 = form.text_input("Cantos símbolos de planeswalkers hai no quebacabezas")
 q3 = form.text_input('Con los dedos de las manos y los dedos de los pies ....')
 
 submit = form.form_submit_button('DÁME A CHAVE')
