@@ -6,7 +6,7 @@ st.title('GUESS THE KEY')
 
 st.write(
     '''
-    # If you want your gift 
+    # If you want your gift ...
     
     ## First you must get the keys that open the locks 😈
     '''
