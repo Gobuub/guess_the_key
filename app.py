@@ -33,32 +33,21 @@ if submit_m1:
         st.balloons()
         l, c, r = st.columns(3)
         c.success("🎉 AQUÍ ESTÁ A TÚA CLAVE!")
-
+        c.info('##   🎉🎉 295 ')
         st.image('images/puzzle.png', width=720)
+    else:
+        st.error('# SEGUIR PROBANDO')
 st.write('## Segunda proba')
-left, right = st.columns(2)
 
-right.info('MISIÓN 1: ' + r'$x = \frac{p + g}{2}$')
-right.write(r'$p = $Total de xente no crebacabezas')
-right.write(r'$w = $Total de mulleres no crebacabezas')
-right.write(r'$m = $Total homes no crebacabezas')
-right.write(r'$b = $Total de nenos no crebacabezas')
-right.write(r'$g = $Total de nenas no crebacabezas')
+form_m2 = st.form('template_2')
+resp1 = '7'
 
-form = left.form('template_form2')
+q1 = form_m2.text_input("¿Cantos símbolos de Planeswalker hai no crebacabezas?")
 
-q1 = form.text_input("Misión 1")
-q2 = form.text_input("¿Cantos símbolos de Planeswalker hai no crebacabezas?")
-q3 = form.text_input('Con los dedos de las manos y los dedos de los pies ....')
-
-submit = form.form_submit_button('DÁME A CLAVE')
-
-resp1 = '22'
-resp2 = '7'
-resp3 = '23'
+submit = form_m2.form_submit_button('DÁME A CLAVE')
 
 if submit:
-    if q1 == resp1 and q2 == resp2 and q3 == resp3:
+    if q1 == resp1:
 
         st.balloons()
         l, c, r = st.columns(3)
