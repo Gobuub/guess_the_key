@@ -4,6 +4,8 @@ st.set_page_config(layout='centered', page_icon='😈', page_title='ADIVIÑA A C
 
 st.title('😈 ADIVIÑA A CLAVE 😈')
 
+st.write('# Agardamos que o disfrutedes tanto como nós facéndoo')
+
 st.write(
     '''
     # Se queredes o voso agasallo...
