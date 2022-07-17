@@ -34,9 +34,9 @@ q3 = form.text_input('Con los dedos de las manos y los dedos de los pies ....')
 
 submit = form.form_submit_button('DÁME A CHAVE')
 
-resp1 = '23'
+resp1 = '22'
 resp2 = '7'
-resp3 = '22'
+resp3 = '23'
 
 
 if submit:
