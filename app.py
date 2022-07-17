@@ -6,13 +6,13 @@ st.title('ADIVIÑA A CLAVE')
 
 st.write(
     '''
-    # Se queres o teu agasallo...
+    # Se queredes o voso agasallo...
     
-     ## Primeiro debes conseguir as chaves que abren as pechaduras 😈
+     ## Primeiro teredes que conseguir as claves que abren os cadeados. 😈
     '''
 )
 
-st.write('### Encha todos os recadros coas respostas correctas para obter a clave')
+st.write('### Rechea tódalas caixas de texto coas respostas correctas para conseguir a clave.')
 
 st.image('images/demo_title.jpg', width=720)
 
@@ -20,19 +20,19 @@ left, right = st.columns(2)
 
 
 right.info('MISIÓN 1: ' + r'$x = \frac{p + g}{2}$')
-right.write(r'$p = $Total de persoas en quebracabezas')
-right.write(r'$w = $Total de mulleres no quebracabezas')
-right.write(r'$m = $Total homes en quebracabezas')
-right.write(r'$b = $total de nenos en quebracabezas')
-right.write(r'$g = $total de nenas en quebracabezas')
+right.write(r'$p = $Total de xente no crebacabezas')
+right.write(r'$w = $Total de mulleres no crebacabezas')
+right.write(r'$m = $Total homes no crebacabezas')
+right.write(r'$b = $total de nenos no crebacabezas')
+right.write(r'$g = $total de nenas no crebacabezas')
 
 form = left.form('template_form')
 
 q1 = form.text_input("Misión 1")
-q2 = form.text_input("Cantos símbolos de planeswalkers hai no quebacabezas")
+q2 = form.text_input("¿Cantos símbolos de Planeswalker hai no crebacabezas?")
 q3 = form.text_input('Con los dedos de las manos y los dedos de los pies ....')
 
-submit = form.form_submit_button('DÁME A CHAVE')
+submit = form.form_submit_button('DÁME A CLAVE')
 
 resp1 = '22'
 resp2 = '7'
