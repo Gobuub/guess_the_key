@@ -2,52 +2,50 @@ import streamlit as st
 
 st.set_page_config(layout='centered', page_icon='😈', page_title='GUESS THE KEY')
 
-st.title('GUESS THE KEY')
+st.title('ADIVIÑA A CLAVE')
 
 st.write(
     '''
-    # If you want your gift ...
+    # Se queres o teu agasallo...
     
-    ## First you must get the keys that open the locks 😈
+     ## Primeiro debes conseguir as chaves que abren as pechaduras 😈
     '''
 )
 
-st.write('### Fill all the boxes with the correct answers to get the key')
+st.write('### Encha todos os recadros coas respostas correctas para obter a clave')
 
 st.image('images/demo_title.jpg', width=720)
 
 left, right = st.columns(2)
 
 
-right.info('Quest 1: ' + r'$x = \frac{p + g}{2}$')
-right.info('Quest 3: ' + r"$z = p - m - (b-g)$")
-right.write(r'$p = $total people on puzzle')
-right.write(r'$w = $total women on puzzle')
-right.write(r'$m = $total men on puzzle')
-right.write(r'$b = $total kids (boys) on puzzle')
-right.write(r'$g = $total kids (girls) on puzzle')
+right.info('MISIÓN 1: ' + r'$x = \frac{p + g}{2}$')
+right.write(r'$p = $Total de persoas en quebracabezas')
+right.write(r'$w = $Total de mulleres no quebracabezas')
+right.write(r'$m = $Total homes en quebracabezas')
+right.write(r'$b = $total de nenos en quebracabezas')
+right.write(r'$g = $total de nenas en quebracabezas')
 
 form = left.form('template_form')
 
 q1 = form.text_input("Quest 1")
-q2 = form.text_input("How many planeswalkers symbols are on the puzzle")
-q3 = form.text_input('Quest 3')
+q2 = form.text_input("Cantos símbolos de planeswalkers hai no queebacabezas")
+q3 = form.text_input('Con los dedos de las manos y los dedos de los pies ....')
 
-submit = form.form_submit_button('GIVE US THE KEY')
+submit = form.form_submit_button('DÁME A CHAVE')
 
 resp1 = '23'
 resp2 = '7'
 resp3 = '22'
 
-print(q1 == resp1, q2 == resp2, q3 == resp3)
 
 if submit:
     if q1 == resp1 and q2 == resp2 and q3 == resp3:
 
         st.balloons()
         l, c, r = st.columns(3)
-        c.success("🎉 HERE IS YOUR KEY!")
+        c.success("🎉 AQUÍ ESTÁ A TÚA CLAVE!")
 
         st.image('images/demo_sol.jpg', width=720)
     else:
-        st.error('# KEEP TRIYING')
+        st.error('# SEGUIR PROBANDO')
