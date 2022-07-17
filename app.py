@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(layout='centered', page_icon='😈', page_title='ADIVIÑA A CLAVE')
 
-st.title('ADIVIÑA A CLAVE')
+st.title('😈 ADIVIÑA A CLAVE 😈')
 
 st.write(
     '''
