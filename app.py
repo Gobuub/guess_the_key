@@ -18,27 +18,24 @@ st.write('### Rechea tódalas caixas de texto coas respostas correctas para cons
 
 st.image('images/demo_title.jpg', width=720)
 
-st.write('## Primeira proba')
+st.write(' Primeira proba')
 
-st.info('Cal é o S/N da peza que falta no Lego?')
+form_m3 = st.form('template_3')
 
-m1_form = st.form('template_form')
+q3 = form_m3.text_input('Cos dedos das mans e dos pés ...')
 
-m1_q1 = m1_form.text_input('Resposta de proba')
+resp3 = '23'
 
-submit_m1 = m1_form.form_submit_button('ENVIAR RESPOSTA')
+submit3 = form_m3.form_submit_button('DÁME A CLAVE')
 
-resp_m1 = '4504378'
-
-if submit_m1:
-    if m1_q1 == resp_m1:
-        st.balloons()
-        l, c, r = st.columns(3)
-        c.success("🎉 AQUÍ ESTÁ A TÚA CLAVE!")
-        c.info('##   🎉🎉 295 ')
+if submit3:
+    if q3 == resp3:
+        st.snow()
+        st.success('## Guía para o crebacabezas')
         st.image('images/puzzle.png', width=720)
     else:
         st.error('# SEGUIR PROBANDO')
+
 st.write('## Segunda proba')
 
 form_m2 = st.form('template_2')
@@ -59,3 +56,27 @@ if submit:
 
     else:
         st.error('# SEGUIR PROBANDO')
+
+st.write('##  proba')
+
+st.info('Cal é o S/N da peza que falta no Lego?')
+
+m1_form = st.form('template_form')
+
+m1_q1 = m1_form.text_input('Resposta de proba')
+
+submit_m1 = m1_form.form_submit_button('ENVIAR RESPOSTA')
+
+resp_m1 = '4504378'
+
+if submit_m1:
+    if m1_q1 == resp_m1:
+        st.balloons()
+        l, c, r = st.columns(3)
+        c.success("🎉 AQUÍ ESTÁ A TÚA CLAVE!")
+        c.info('##   🎉 295 🎉 ')
+
+    else:
+        st.error('# SEGUIR PROBANDO')
+
+
