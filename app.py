@@ -22,7 +22,7 @@ st.write('## Primeira proba')
 
 form_m3 = st.form('template_3')
 
-q3 = form_m3.text_input('Cos dedos das mans e dos pés ...')
+q3 = form_m3.text_input('Cos dedos das mans e cos dedos dos pés...')
 
 resp3 = '23'
 
