@@ -20,9 +20,11 @@ st.image('images/demo_title.jpg', width=720)
 
 st.write('## Primeira proba')
 
+st.warning('### Cos dedos das mans e cos dedos dos pés...')
+
 form_m3 = st.form('template_3')
 
-q3 = form_m3.text_input('Cos dedos das mans e cos dedos dos pés...')
+q3 = form_m3.text_input('RESPOSTA')
 
 resp3 = '23'
 
@@ -38,10 +40,12 @@ if submit3:
 
 st.write('## Segunda proba')
 
+st.warning('### ¿Cantos símbolos de Planeswalker hai no crebacabezas?')
+
 form_m2 = st.form('template_2')
 resp1 = '7'
 
-q1 = form_m2.text_input("¿Cantos símbolos de Planeswalker hai no crebacabezas?")
+q1 = form_m2.text_input("RESPOSTA")
 
 submit = form_m2.form_submit_button('DÁME A CLAVE')
 
@@ -59,11 +63,11 @@ if submit:
 
 st.write('## Terceira proba')
 
-st.info('Cal é o S/N da peza que falta no Lego?')
+st.warning('### Cal é o S/N da peza que falta no Lego?')
 
 m1_form = st.form('template_form')
 
-m1_q1 = m1_form.text_input('Resposta de proba')
+m1_q1 = m1_form.text_input('RESPOSTA')
 
 submit_m1 = m1_form.form_submit_button('ENVIAR RESPOSTA')
 
