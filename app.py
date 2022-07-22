@@ -18,7 +18,7 @@ st.write('### Rechea tódalas caixas de texto coas respostas correctas para cons
 
 st.image('images/demo_title.jpg', width=720)
 
-st.write(' Primeira proba')
+st.write('## Primeira proba')
 
 form_m3 = st.form('template_3')
 
@@ -57,7 +57,7 @@ if submit:
     else:
         st.error('# SEGUIR PROBANDO')
 
-st.write('##  proba')
+st.write('## Terceira proba')
 
 st.info('Cal é o S/N da peza que falta no Lego?')
 
