@@ -1,16 +1,6 @@
 import streamlit as st
 
 st.set_page_config(layout='centered', page_icon='😈', page_title='ADIVIÑA A CLAVE')
-'''
-fun_colors = st.checkbox('Outros Cores')
-
-if fun_colors:
-    back = st.get_option('theme.backgroundColor')
-    text = st.get_option('theme.textColor')
-    col1 = st.get_option('theme.primaryColor')
-    back2 = st.get_option('theme.secondaryBackgroundColor')
-    fonts = st.get_option('theme.font')'''
-
 
 st.title('😈 ADIVIÑA A CLAVE 😈')
 
